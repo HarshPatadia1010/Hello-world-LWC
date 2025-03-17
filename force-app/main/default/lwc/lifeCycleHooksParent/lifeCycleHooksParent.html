@@ -1,0 +1,36 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 02-26-2025
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+    <lightning-card title="HOOKS PARENT CARD">
+        <div class="slds-m-around_large">
+          <!-- <input type="text" onkeyup={changeHandler}/>
+          {name} -->
+
+          <!-- unmounted phase  -->
+          <template if:false={isChildVisible}>
+            <lightning-button variant="destructive-text" label="Show child" 
+            title="show Child" onclick={handleClick} 
+            class="slds-m-left_x-small">
+          </lightning-button>
+
+          </template>
+         
+
+          <template if:true={isChildVisible}>
+
+            <lightning-button variant="destructive-text" label="Remove child" 
+          title="Remove Child" onclick={handleClick} 
+          class="slds-m-left_x-small"></lightning-button>
+
+            <c-life-cycle-hooks-child></c-life-cycle-hooks-child>
+
+          </template>
+       
+        </div>
+    </lightning-card>
+</template>

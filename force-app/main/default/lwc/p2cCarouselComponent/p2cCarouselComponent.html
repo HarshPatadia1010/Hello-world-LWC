@@ -1,0 +1,28 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 03-04-2025
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+
+    <template>
+        <lightning-card  variant="base">
+            <div class="slds-size_3-of-4">
+                <div class="slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small">Carousel With disable-auto-scroll Attribute
+                <lightning-carousel >
+                    <template for:each={carouselDetail} for:item="item">
+                        <lightning-carousel-image key={item.header} >
+                            <!-- src={item.src} -->
+                            header={item.header}
+                            description={item.description}
+                            alternativeText={item.alternativeText}
+                        </lightning-carousel-image>
+                    </template>
+                </lightning-carousel>
+                </div>
+          </div>
+        </lightning-card>
+    </template>
+    
+    

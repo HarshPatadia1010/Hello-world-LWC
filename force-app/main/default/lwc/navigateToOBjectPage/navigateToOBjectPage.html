@@ -1,0 +1,48 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 03-11-2025
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+    <lightning-card title="Navigate To New Record" variant="base">
+        <div >
+            <lightning-button 
+            variant="brand"
+            label="New Record(obj Contact)" 
+            type="button"
+            onclick={navigateToNewRecord} 
+            ></lightning-button> 
+                      
+        </div>
+    </lightning-card>
+    <lightning-card title="Navigate To New Record With Default value" >
+        <lightning-button 
+        variant="brand"
+        label="New Record(obj Contact) With Default Values" 
+        type="button"
+        onclick={navigateToNewRecordWithDefault} 
+        ></lightning-button> 
+    </lightning-card>
+
+    <lightning-card title="Navigate To List View" >
+        <lightning-button 
+        variant="brand"
+        label="List View of Object" 
+        type="button"
+        onclick={navigateToListView} 
+        ></lightning-button> 
+
+    </lightning-card>
+
+    <lightning-card title="Navigate To Files" >
+        <lightning-button 
+        variant="brand"
+        label="Navigate To Files" 
+        type="button"
+        onclick={navigateToFiles} 
+        ></lightning-button> 
+
+    </lightning-card>
+</template>

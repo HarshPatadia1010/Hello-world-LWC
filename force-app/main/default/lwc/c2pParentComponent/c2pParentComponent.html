@@ -1,0 +1,29 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 03-04-2025
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+    <lightning-card title="Child to parent communicaion"   onclose={closeHandler}>
+
+        <!-- c2p using events  -->
+        <lightning-button 
+        variant="success"
+        label="Show Modal" 
+        onclick={clickHandler} 
+        ></lightning-button>
+        <p>{msg}</p>
+        <template if:true={showModal}>
+            <!-- <c-c2p-model-component
+            onclose={closeHandler}
+            ></c-c2p-model-component> -->
+            <!-- c2p using event with data JUST all detail in custon event -->
+
+            <!-- c2p using bubbling effect of js just make bubbles true with the detail argument -->
+            <c-c2p-model-component></c-c2p-model-component> 
+            <!-- using bubbling effevc t to call the onclose from parent -->
+        </template>
+    </lightning-card>
+</template>

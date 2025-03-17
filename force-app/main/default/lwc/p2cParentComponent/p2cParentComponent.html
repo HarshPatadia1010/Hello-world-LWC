@@ -1,0 +1,36 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 03-04-2025
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+  <!-- example for simple data -->
+    <c-p2c-alert-component message='YES I GOT DATA !!!' heading="P2C primitive data communication"
+    number=3 is-visible
+    ></c-p2c-alert-component>
+    <!-- example for complex data -->
+    <div class="slds-var-m-around_medium">
+      <c-p2c-carousel-component carousel-details={carouselData}></c-p2c-carousel-component>
+    </div>
+
+
+    <!-- example of passing data on an action -->
+     <lightning-card title="Progress Bar" >
+       <lightning-input type="number" label="Enter percentage" value={percentage} onkeyup={changeHandler}>
+      </lightning-input>
+      <c-p2c-progress-bar progress={percentage} ></c-p2c-progress-bar>
+    </lightning-card>
+
+    <!-- Calling chil method from parent component  diff approach
+    we can do this by calling a public method of child with the help of a event in the parent component the using querryselector 
+    to select child comp. and then .method of the child..... 
+    -->
+   <div class="slds-m-around_medium">
+      
+    <lightning-button variant="destructive" label="Rest Slider" title="Destructive action"
+     onclick={handleReset} class="slds-m-left_x-small"></lightning-button>
+     <c-p2c-slider></c-p2c-slider>
+   </div>
+</template>

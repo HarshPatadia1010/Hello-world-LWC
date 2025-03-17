@@ -1,0 +1,46 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 02-20-2025
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+	<lightning-card title="CONDITIONAL RENDERING" style="background-color: aqua;">
+    <div>
+		<lightning-button
+			class="slds-m-around_medium"
+			variant="success"
+			label="Success"
+			title="Successful action"
+			onclick={handleClick}
+		>
+		</lightning-button>
+
+		<template if:true={isVisible}>
+			<div style="margin-left: 3px; margin-top: 3px;">
+				Hi this is a hidden text show by cliking the button.
+			</div>
+		</template>
+
+		<template if:false={isVisible}>
+			<div style="margin-left: 3px; margin-top: 3px;">
+				this is a default text click the button to change.
+			</div>
+		</template>
+
+		<lightning-input
+			type="text"
+			label="Enter the correct name"
+			onkeyup={Namehandle}
+		>
+		</lightning-input>
+    <div>{name1}</div>
+		<template if:true={inputName}>
+			<div>GRATE!you have enter the correct name</div>
+		</template>
+  </div>
+	</lightning-card>
+
+	<!-- <button data-id="101" data-name="John Doe" onclick={handleClick}>Click Me</button> -->
+</template>

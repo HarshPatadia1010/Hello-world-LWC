@@ -1,0 +1,29 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 02-26-2025
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+    <lightning-card title="Render Multiple template" icon-name="custom:custom14" >
+        <div class="slds-m-around_medium" >
+           <h1  class="slds-m-around_medium slds-m-bottom_medium" >Choose your optin</h1>
+           <lightning-button 
+             variant="destructive"
+             label="SignUp" 
+             title="SignUp" 
+             onclick={handleClick} 
+             class="slds-m-left_x-small"
+           ></lightning-button>
+
+           <lightning-button 
+           variant="success"
+           label="SignIn" 
+           title="SignIn" 
+           onclick={handleClick} 
+           class="slds-m-left_x-small"
+         ></lightning-button>
+        </div>
+    </lightning-card>
+</template>

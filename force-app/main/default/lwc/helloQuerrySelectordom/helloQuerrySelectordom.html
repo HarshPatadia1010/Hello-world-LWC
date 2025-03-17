@@ -1,0 +1,23 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 02-26-2025
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+  <lightning-card title="QuerySelector">
+    <div class="slds-m-around_large">
+        <h1>hi iam a heading(output is the same in console by clicking btn)</h1>    
+        <button onclick={featchDetailHandler}>fetch detail</button>
+
+        
+        <template  for:each={NameList} for:item="list">
+            <div class="list"  key={list}>{list}</div>
+        </template>
+        <div class="child" lwc:dom="manual">
+
+        </div>
+    </div>
+  </lightning-card>
+</template>

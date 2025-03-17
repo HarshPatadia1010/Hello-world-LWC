@@ -1,0 +1,27 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 02-23-2025
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+    <lightning-card  title="SEE THE MAGIC">
+          
+        <lightning-input type="text" label="enter what you want see !!! " value={greeting}></lightning-input>
+        <lightning-button variant="brand" label="submit" title="Primary action" onclick={handleClick} class="slds-m-left_x-small">
+  
+        </lightning-button>
+        <div>This is what you said:- {greeting}</div>
+    </lightning-card>  
+    
+
+    <lightning-card  title="EG OF QUARRYSELECTOR ALL">
+          
+      <lightning-input type="text" name="fname" label="First Name" value={fname}></lightning-input>
+      <lightning-input type="text" name="lname" label="Last Name" value={lname}></lightning-input>
+      <lightning-button variant="brand" label="submit" title="Primary action" onclick={handlevent} class="slds-m-left_x-small">
+      </lightning-button>
+      <div>This is what you said:- {fname} {lname}</div>
+  </lightning-card>  
+</template>

@@ -1,0 +1,29 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 02-20-2025
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+    <lightning-card title="For Each loop">
+        <div class="slds-var-m-around_large">
+            <template for:each={carList} for:item="car">
+                <div key={car}>{car}</div>
+            </template>
+        </div>
+    </lightning-card>
+
+    <lightning-card title="iterator loop">
+        <div>
+        <template iterator:ceo={ceoList}>
+            <div key={ceo.value.id}>
+                <template if:true={ceo.first}>
+                    <strong>List of names</strong><br>
+                   </template>
+                <strong>{ceo.value.id}  {ceo.value.name}</strong>
+            </div>
+        </template>
+       </div>
+    </lightning-card>
+</template>
